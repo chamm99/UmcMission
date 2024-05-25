@@ -1,6 +1,6 @@
-package com.example.umc6th.domain.photo;
+package com.example.umcmission.domain.photo;
 
-import com.example.umc6th.domain.Review;
+import com.example.umcmission.domain.FAQ;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -9,7 +9,7 @@ import lombok.*;
 @Builder
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @AllArgsConstructor
-public class ReviewPhoto {
+public class FAQPhoto {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -17,6 +17,6 @@ public class ReviewPhoto {
     private String photo;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "review_id")
-    private Review review;
+    @JoinColumn(name = "faq_id")
+    private FAQ faq;
 }

@@ -1,10 +1,10 @@
-package com.example.umc6th.domain;
+package com.example.umcmission.domain;
 
-import com.example.umc6th.domain.common.BaseEntity;
-import com.example.umc6th.domain.mapping.UserMission;
-import com.example.umc6th.domain.mapping.UserRestaurantReview;
-import com.example.umc6th.domain.mapping.UserFAQ;
-import com.example.umc6th.domain.mapping.UserFoodPreference;
+import com.example.umcmission.domain.common.BaseEntity;
+import com.example.umcmission.domain.mapping.UserMission;
+import com.example.umcmission.domain.mapping.UserRestaurantReview;
+import com.example.umcmission.domain.mapping.UserFAQ;
+import com.example.umcmission.domain.mapping.UserFoodPreference;
 import jakarta.persistence.*;
 import lombok.*;
 

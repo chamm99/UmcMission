@@ -1,6 +1,6 @@
-package com.example.umc6th.domain.photo;
+package com.example.umcmission.domain.photo;
 
-import com.example.umc6th.domain.Restaurant;
+import com.example.umcmission.domain.Restaurant;
 import jakarta.persistence.*;
 import lombok.*;
 

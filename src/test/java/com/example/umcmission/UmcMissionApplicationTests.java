@@ -1,10 +1,10 @@
-package com.example.umc6th;
+package com.example.umcmission;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Umc6thWeek7MissionApplicationTests {
+class UmcMissionApplicationTests {
 
     @Test
     void contextLoads() {

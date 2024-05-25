@@ -1,4 +1,4 @@
-package com.example.umc6th;
+package com.example.umcmission;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,10 +6,10 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 @EnableJpaAuditing
 @SpringBootApplication
-public class Umc6thWeek7MissionApplication {
+public class UmcMissionApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(Umc6thWeek7MissionApplication.class, args);
+        SpringApplication.run(UmcMissionApplication.class, args);
     }
 
 }

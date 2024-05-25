@@ -1,7 +1,8 @@
-package com.example.umc6th.domain.mapping;
+package com.example.umcmission.domain.mapping;
 
-import com.example.umc6th.domain.Mission;
-import com.example.umc6th.domain.User;
+import com.example.umcmission.domain.FoodPreference;
+import com.example.umcmission.domain.User;
+import com.example.umcmission.domain.common.BaseEntity;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -10,18 +11,17 @@ import lombok.*;
 @Builder
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @AllArgsConstructor
-public class UserMission {
+public class UserFoodPreference extends BaseEntity {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
-    private Boolean isSuccess;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id")
     private User user;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "mission_id")
-    private Mission mission;
+    @JoinColumn(name = "food_preference_id")
+    private FoodPreference foodPreference;
 }

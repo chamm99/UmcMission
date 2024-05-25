@@ -1,8 +1,8 @@
-package com.example.umc6th.domain.mapping;
+package com.example.umcmission.domain.mapping;
 
-import com.example.umc6th.domain.Restaurant;
-import com.example.umc6th.domain.Review;
-import com.example.umc6th.domain.User;
+import com.example.umcmission.domain.Restaurant;
+import com.example.umcmission.domain.Review;
+import com.example.umcmission.domain.User;
 import jakarta.persistence.*;
 import lombok.*;
 

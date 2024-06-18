@@ -1,7 +1,7 @@
 package com.example.umcmission.annotation.validator;
 
 import com.example.umcmission.annotation.ExistCategories;
-import com.example.umcmission.web.repository.FoodPreferenceRepository;
+import com.example.umcmission.repository.FoodPreferenceRepository;
 import jakarta.validation.ConstraintValidator;
 import jakarta.validation.ConstraintValidatorContext;
 import lombok.RequiredArgsConstructor;
@@ -28,7 +28,7 @@ public class CategoriesExistValidator implements ConstraintValidator<ExistCatego
 
         if (!isValid) {
             context.disableDefaultConstraintViolation();
-            context.buildConstraintViolationWithTemplate(ErrorStatus.FOOD_CATEGORY_NOT_FOUND.toString()).addConstraintViolation();
+            context.buildConstraintViolationWithTemplate(ErrorStatus.FOOD_PREFERENCE_NOT_FOUND.toString()).addConstraintViolation();
         }
 
         return isValid;

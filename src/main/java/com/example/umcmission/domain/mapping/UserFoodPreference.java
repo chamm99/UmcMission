@@ -24,4 +24,8 @@ public class UserFoodPreference extends BaseEntity {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "food_preference_id")
     private FoodPreference foodPreference;
+
+    public void updateUser(User newUser) {
+        this.user = newUser;
+    }
 }

@@ -1,7 +1,8 @@
 package com.example.umcmission.annotation.validator;
 
 import com.example.umcmission.annotation.ChallengeMission;
-import com.example.umcmission.web.repository.UserMissionRepository;
+import com.example.umcmission.domain.enums.MissionStatus;
+import com.example.umcmission.repository.UserMissionRepository;
 import jakarta.validation.ConstraintValidator;
 import jakarta.validation.ConstraintValidatorContext;
 import lombok.RequiredArgsConstructor;

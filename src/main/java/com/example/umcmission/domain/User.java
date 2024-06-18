@@ -24,8 +24,8 @@ public class User extends BaseEntity {
     private Long id;
 
     private String name;
-    private String gender;
-    private LocalDateTime birthDate;
+    private Integer gender;
+    private Integer birthDate;
     private String address;
     private String status;
     private LocalDateTime inactiveDate;

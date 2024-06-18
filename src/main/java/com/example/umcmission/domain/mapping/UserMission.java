@@ -2,6 +2,7 @@ package com.example.umcmission.domain.mapping;
 
 import com.example.umcmission.domain.Mission;
 import com.example.umcmission.domain.User;
+import com.example.umcmission.domain.enums.MissionStatus;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -15,7 +16,8 @@ public class UserMission {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private Boolean isSuccess;
+    @Enumerated(EnumType.STRING)
+    private MissionStatus status;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id")

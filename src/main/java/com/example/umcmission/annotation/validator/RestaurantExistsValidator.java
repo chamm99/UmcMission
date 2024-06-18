@@ -1,7 +1,7 @@
 package com.example.umcmission.annotation.validator;
 
 import com.example.umcmission.annotation.ExistRestaurant;
-import com.example.umcmission.web.repository.RestaurantRepository;
+import com.example.umcmission.repository.RestaurantRepository;
 import jakarta.validation.ConstraintValidator;
 import jakarta.validation.ConstraintValidatorContext;
 import lombok.RequiredArgsConstructor;

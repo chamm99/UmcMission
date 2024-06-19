@@ -3,7 +3,9 @@ package com.example.umcmission.converter;
 import com.example.umcmission.domain.User;
 import com.example.umcmission.domain.enums.Gender;
 import com.example.umcmission.web.dto.UserRequestDto;
+import com.example.umcmission.web.dto.UserResponseDto;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 
 public class UserConverter {
@@ -20,6 +22,13 @@ public class UserConverter {
                 .name(request.name())
                 .gender(request.gender())
                 .userFoodPreferenceList(new ArrayList<>())
+                .build();
+    }
+
+    public static UserResponseDto.JoinResultDto toJoinResultDto(User user) {
+        return UserResponseDto.JoinResultDto.builder()
+                .userId(user.getId())
+                .createdAt(LocalDateTime.now())
                 .build();
     }
 }

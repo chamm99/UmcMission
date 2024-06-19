@@ -30,6 +30,12 @@ public enum ErrorStatus implements BaseErrorCode {
     // 미션 에러
     MISSION_NOT_FOUND(HttpStatus.NOT_FOUND, "MISSION400", "해당 미션을 찾을 수 없습니다."),
 
+    // 식당 에러
+    RESTAURANT_NOT_FOUND(HttpStatus.NOT_FOUND, "RESTAURANT400", "해당 식당을 찾을 수 없습니다."),
+
+    // 지역 에러
+    REGION_NOT_FOUND(HttpStatus.NOT_FOUND, "REGION400", "해당 지역을 찾을 수 없습니다."),
+
     // 예시,,,
     ARTICLE_NOT_FOUND(HttpStatus.NOT_FOUND, "ARTICLE4001", "게시글이 없습니다.");
 

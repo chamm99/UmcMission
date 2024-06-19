@@ -20,7 +20,7 @@ public class UserMissionConverter {
 
     public static UserMissionResponseDto.JoinResultDto toJoinResultDto(UserMission userMission) {
         return UserMissionResponseDto.JoinResultDto.builder()
-                .memberId(1L)
+                .userId(1L)
                 .missionId(userMission.getMission().getId())
                 .createdAt(LocalDateTime.now())
                 .build();

@@ -23,6 +23,7 @@ public class Restaurant extends BaseEntity {
 
     private String name;
     private Boolean isOpen;
+    private String address;
     private String type;
     private String status;
     private LocalDate inactiveDate;

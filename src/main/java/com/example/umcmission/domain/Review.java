@@ -23,9 +23,11 @@ public class Review extends BaseEntity {
     private String content;
     private String score;
 
-    @OneToMany(mappedBy = "review", cascade = CascadeType.ALL)
-    List<UserRestaurantReview> userRestaurantReviewList = new ArrayList<>();
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "user_id")
+    private User user;
 
-    @OneToMany(mappedBy = "review", cascade = CascadeType.ALL)
-    List<ReviewPhoto> reviewPhotoList = new ArrayList<>();
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "restaurant_id")
+    private Restaurant restaurant;
 }

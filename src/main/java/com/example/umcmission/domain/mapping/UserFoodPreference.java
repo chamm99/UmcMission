@@ -28,4 +28,8 @@ public class UserFoodPreference extends BaseEntity {
     public void updateUser(User newUser) {
         this.user = newUser;
     }
+
+    public void setUser(User newUser) {
+        user = newUser;
+    }
 }

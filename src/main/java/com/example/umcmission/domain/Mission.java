@@ -2,6 +2,7 @@ package com.example.umcmission.domain;
 
 import com.example.umcmission.domain.common.BaseEntity;
 import com.example.umcmission.domain.mapping.UserMission;
+import com.example.umcmission.domain.mapping.UserRestaurantReview;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -23,7 +24,8 @@ public class Mission extends BaseEntity {
     private int point;
     private LocalDate untilWhen;
 
-    @OneToOne
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "restaurant_id")
     private Restaurant restaurant;
 
     @OneToMany(mappedBy = "mission", cascade = CascadeType.ALL)

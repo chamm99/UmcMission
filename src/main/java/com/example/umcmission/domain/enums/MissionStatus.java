@@ -1,5 +1,5 @@
 package com.example.umcmission.domain.enums;
 
 public enum MissionStatus {
-    CHALLENGING, COMPILE
+    CHALLENGING, COMPILE, COMPLETE
 }
